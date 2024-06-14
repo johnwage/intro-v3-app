@@ -1,8 +1,11 @@
+import { newToDo } from '@/utils/actions'
+
 const NewTodoForm = ({}) => {
   return (
     <div>
-      <form>
-        <input type="text" className="border border-black/25" />
+      <form action={newToDo}>
+        <input name="content" type="text" className="border border-black/25" />
+        <button type="submit">new todo</button>
       </form>
     </div>
   )
